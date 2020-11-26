@@ -13,6 +13,7 @@
     - https://docs.rs/libc/0.2.74/libc/struct.sockaddr_in.html
     - https://docs.rs/libc/0.2.74/libc/struct.in_addr.html
     - https://users.rust-lang.org/t/help-understanding-libc-call/17308/9
+    * Note that the port needs to be in network-order (big endian);
 * For working out bind I was able to use some of the above plus the following
     - https://docs.rs/libc/0.2.74/libc/fn.bind.html
     - https://man7.org/linux/man-pages/man2/bind.2.html
@@ -27,3 +28,5 @@
     - https://man7.org/linux/man-pages/man2/listen.2.html
 * Used the following for accepting an incoming connection.
     - https://man7.org/linux/man-pages/man2/accept.2.html
+* When reading the bytes and string I used the following references.
+    - https://doc.rust-lang.org/std/str/fn.from_utf8.html
